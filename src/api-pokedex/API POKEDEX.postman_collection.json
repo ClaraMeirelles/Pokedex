@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "2a40f10a-7e6a-498d-a2e3-98e49e40b79e",
+		"name": "API POKEDEX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista de Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon?limit=30",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon por nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/:name",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "name",
+							"value": "bulbasaur"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon por tipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/type/3",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"type",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon por habilidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/ability/4",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"ability",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
